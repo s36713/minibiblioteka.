@@ -12,14 +12,33 @@ public class Ksiazka {
 
 
     }
+
     public void wypiszInfo() {
         System.out.println("Tytul:" + this.tytul);
         System.out.println("Autor:" + this.autor);
         System.out.println("Liczba stron:" + this.liczbaStron);
         System.out.println("Dostepna:" + this.dostepna);
 
+    }
 
+    boolean wypozycz() {
+        if (dostepna) {
+            System.out.println("Ksiazka jest dostepna");
+            return dostepna = false;
+
+        } else {
+            System.out.println("Ksiazka jest niedostepna");
+            return false;
+
+        }
 
 
     }
+
+    void zwroc() {
+        System.out.println("Dziekujem za zwrot!");
+    }
 }
+
+
+
