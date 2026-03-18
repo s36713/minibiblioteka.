@@ -23,7 +23,7 @@ public class Ksiazka {
 
     boolean wypozycz() {
         if (dostepna) {
-            System.out.println("Ksiazka jest dostepna");
+            System.out.println("Ksiazka jest dostepna.");
             return dostepna = false;
 
         } else {
